@@ -1,0 +1,44 @@
+.body_content {
+  width: 100%;
+  min-height: calc(100dvh - 270px);
+  background-color: #a5d6a7;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tabela_container {
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+}
+.tabela_container table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+}
+.tabela_container table caption {
+  border: 1px 1px 0 1px solid black;
+  height: 30px;
+  font-size: 20px;
+}
+.tabela_container table thead tr {
+  height: 33px;
+}
+.tabela_container table tbody tr {
+  height: 28px;
+}
+.tabela_container table tr {
+  border-bottom: 1px solid black;
+}
+.tabela_container table tbody tr td {
+  padding: 5px;
+  box-sizing: border-box;
+}
