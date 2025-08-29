@@ -1,3 +1,4 @@
+import Sponsors from "../../components/Sponsors/Sponsors";
 import "./styles.css";
 
 export default function HomePage() {
@@ -43,6 +44,9 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      <Sponsors />
+
     </section>
   );
 }
