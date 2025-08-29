@@ -1,10 +1,11 @@
+import HeroSection from "../../components/HeroSection/HeroSection";
 import Sponsors from "../../components/Sponsors/Sponsors";
-import "./styles.css";
+import styles from './HomePage.module.css';
 
 export default function HomePage() {
   return (
-    <section class="home_body">
-      <h1>SODAL</h1>
+    <section className={styles.home_body}>
+      <HeroSection />
 
       <div class="container">
         <div class="card">
