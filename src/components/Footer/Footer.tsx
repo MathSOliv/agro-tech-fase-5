@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 export default function Footer() {
@@ -8,11 +9,11 @@ export default function Footer() {
           <img src="/Logo_SODAL-Photoroom.webp" alt="Logo SODAL" />
         </div>
         <div className="footer_links">
-          <a href="#">INÍCIO</a>
-          <a href="about/">SOBRE</a>
-          <a href="doacoes/">DOAÇÕES</a>
-          <a href="contato/">FALE CONOSCO</a>
-          <a href="ranking/">RANKING</a>
+          <Link to="/">INÍCIO</Link>
+          <Link to="/about">SOBRE</Link>
+          <Link to="/donations">DOAÇÕES</Link>
+          <Link to="/contact">FALE CONOSCO</Link>
+          <Link to="/ranking">RANKING</Link>
         </div>
       </div>
       <div className="footer_direitos">

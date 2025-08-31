@@ -26,7 +26,7 @@ const Sponsors = () => {
                 modules={[Autoplay]}
                 breakpoints={{
                     320: { slidesPerView: 2, spaceBetween: 20 },
-                    640: { slidesPerView: 3, spaceBetween: 20 },
+                    760: { slidesPerView: 3, spaceBetween: 20 },
                     1024: { slidesPerView: 4, spaceBetween: 30 },
                 }}
             >

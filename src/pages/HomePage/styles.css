@@ -1,7 +1,5 @@
 .home_body {
   width: 100%;
-  background-color: #a5d6a7;
-  padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
