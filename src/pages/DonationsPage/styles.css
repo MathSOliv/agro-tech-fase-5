@@ -1,89 +1,114 @@
-.body_content {
+.donations_body {
   width: 100%;
   min-height: calc(100dvh - 270px);
-  background-color: #a5d6a7;
-  padding: 10px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-.content_container {
-  width: 1250px;
-  max-width: 90%;
-  margin: auto;
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.donate_text,
-.form_title {
-  margin: 25px auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-}
-.stats_container {
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 48px;
+  padding: 48px 16px;
+  background: linear-gradient(
+      135deg,
+      rgba(232, 245, 233, 0.9),
+      rgba(200, 230, 201, 0.9)
+    ),
+    url("/pessoas_doando.png") center/cover no-repeat;
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding-top: 120px;
 }
-.helped_count,
-.value_count {
-  width: calc(50% - 40px);
-  background-color: rgb(245, 245, 245);
-  border-radius: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+.hero_section {
+  text-align: center;
+  max-width: 800px;
+}
+.hero_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+.hero_subtitle {
+  font-size: 1.25rem;
+  color: #444;
+}
+
+.stats_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+.stat_card {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 32px 24px;
+}
+.stat_number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #388e3c;
+  margin-bottom: 8px;
+}
+.stat_label {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.form_card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px 32px;
+}
+.form_title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 24px;
+}
+.form_group {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  padding: 50px;
+  margin-bottom: 18px;
 }
-.helped_number,
-.value_number {
-  font-size: 70px;
-  margin: auto auto 0 auto;
+.form_group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #2e7d32;
 }
-.helped_text,
-.value_text {
-  font-size: 25px;
-  margin: 0 auto auto auto;
+.form_group input {
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0 12px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
 }
-#formulario {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  width: 550px;
-  max-width: 85%;
-  margin: 10px auto;
-}
-#formulario label {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 5px;
-}
-.form_field {
-  width: 100%;
-  height: 35px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.705);
+.form_group input:focus {
+  border-color: #388e3c;
   outline: none;
-  margin-bottom: 20px;
-  box-sizing: border-box;
 }
-.botao_salvar {
+.donate_button {
   width: 100%;
-  height: 35px;
-  box-sizing: border-box;
-  border-radius: 5px;
+  height: 46px;
   border: none;
-  background-color: #2e7d32;
-  color: white;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #43a047 0%, #2e7d32 100%);
+  color: #fff;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 20px;
-  transition: 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.botao_salvar:hover {
-  scale: 1.03;
+.donate_button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.25);
 }
