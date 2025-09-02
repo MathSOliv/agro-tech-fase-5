@@ -2,8 +2,8 @@ import "./styles.css";
 
 export default function RankingPage() {
   return (
-    <section class="body_content">
-      <div class="tabela_container">
+    <section className="body_content">
+      <div className="tabela_container">
         <table>
           <caption>
             <strong>Ranking de Doações Mensal</strong>

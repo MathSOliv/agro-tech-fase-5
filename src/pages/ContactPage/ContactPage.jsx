@@ -51,50 +51,58 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="home_body">
-      <div className="container_form">
-        <h2 className="form_title">Deixe seus dados para contato!</h2>
+    <section className="contact_body">
+      <div className="contact_card">
+        <h2 className="form_title">Entre em Contato</h2>
+        <p className="form_subtitle">
+          Preencha os campos abaixo e nossa equipe retornará em breve.
+        </p>
+
         <form id="formulario" onSubmit={handleSubmit}>
-          <label htmlFor="nome-completo">Nome Completo:</label>
-          <input
-            type="text"
-            name="nome-completo"
-            className="form_field"
-            value={nomeCompleto}
-            onChange={(e) => setNomeCompleto(e.target.value)}
-          />
+          <div className="form_group">
+            <label htmlFor="nome-completo">Nome Completo</label>
+            <input
+              type="text"
+              name="nome-completo"
+              className="form_field"
+              value={nomeCompleto}
+              onChange={(e) => setNomeCompleto(e.target.value)}
+            />
+          </div>
 
-          <label htmlFor="email">E-mail:</label>
-          <input
-            type="email"
-            name="email"
-            className="form_field"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <div className="form_group">
+            <label htmlFor="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              className="form_field"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
 
-          <label htmlFor="descricao">Descrição</label>
-          <textarea
-            name="descricao"
-            className="form_field"
-            rows="5"
-            value={descricao}
-            onChange={handleDescricaoChange}
-          ></textarea>
+          <div className="form_group">
+            <label htmlFor="descricao">Mensagem</label>
+            <textarea
+              name="descricao"
+              className="form_field textarea_field"
+              rows="5"
+              value={descricao}
+              onChange={handleDescricaoChange}
+            ></textarea>
+          </div>
 
           {mensagens.length > 0 && (
-            <div
-              id="mensagensForm"
-              className={`mensagem ${tipoMensagem}`}
-              style={{ display: "block" }}
-            >
+            <div className={`mensagem ${tipoMensagem}`}>
               {mensagens.map((msg, i) => (
                 <p key={i}>{msg}</p>
               ))}
             </div>
           )}
 
-          <input type="submit" value="ENVIAR" className="botao_salvar" />
+          <button type="submit" className="send_button">
+            Enviar Mensagem
+          </button>
         </form>
       </div>
     </section>
